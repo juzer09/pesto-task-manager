@@ -19,7 +19,6 @@ Firebase account (Sign up at Firebase)
 Installation
 Clone the Repository
 ```bash
-Copy code
 git clone https://github.com/juzer09/pesto-task-manager
 cd your-repo-name
 ```
@@ -41,7 +40,6 @@ Set Up the Frontend
 Navigate back to the root directory and then to the frontend directory. Install dependencies:
 
 ```bash
-Copy code
 cd cd task-manager
 npm install
 ```
@@ -52,7 +50,6 @@ Start the Backend Server
 From the backend directory:
 
 ```bash
-Copy code
 npm start
 ```
 
@@ -62,7 +59,6 @@ Start the Frontend Application
 Open a new terminal, navigate to the frontend directory, and start the React app:
 
 ```bash
-Copy code
 npm start
 ```
 
