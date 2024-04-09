@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+Task Manager Full-Stack Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description**
+This Task Manager is a full-stack application allowing users to manage their tasks with features to create, update, delete, and filter tasks based on their status (e.g., "To Do," "In Progress," "Done"). The application utilizes a React.js front-end and a Node.js/Express back-end, with Firebase Firestore as the database.
 
-## Available Scripts
+**Technologies**
+**Frontend**: React.js, TailwindCSS
+**Backend**: Node.js, Express.js
+**Database**: Firebase Firestore
+**Authentication**: Firebase Authentication (Optional for future implementation)
 
-In the project directory, you can run:
+**Getting Started**
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+**Prerequisites**
+Node.js (Download and install from Node.js website)
+Firebase account (Sign up at Firebase)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
+Clone the Repository
+```bash
+Copy code
+git clone https://github.com/juzer09/pesto-task-manager
+cd your-repo-name
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Set Up the Backend**
+Navigate to the backend directory and install dependencies:
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**Configure your Firebase Firestore database:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a project in Firebase and generate a private key for your service account.
+Place your Firebase service account key JSON file in the backend directory.
+Update your Firebase project details in the initialization script.
+Set Up the Frontend
+Navigate back to the root directory and then to the frontend directory. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+Copy code
+cd cd task-manager
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure the backend API URL is set correctly in the frontend environment or service file where API requests are made.
 
-### `npm run eject`
+Start the Backend Server
+From the backend directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+Copy code
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the Node.js/Express server on localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the Frontend Application
+Open a new terminal, navigate to the frontend directory, and start the React app:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+Copy code
+npm start
+```
 
-## Learn More
+This will serve the React application on localhost:3000 and may prompt to use another port if 3000 is already in use.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Usage**
+Creating Tasks: Access the task creation form on the homepage to add new tasks, specifying their title, description, and status.
+Viewing and Managing Tasks: View all tasks on the homepage, with options to edit their status, update details, or delete them.
+Contributing
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Ensure to update tests as appropriate.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**License**
+This project is licensed under the MIT License - see the LICENSE.md file for details.
