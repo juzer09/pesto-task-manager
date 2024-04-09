@@ -40,7 +40,7 @@ Set Up the Frontend
 Navigate back to the root directory and then to the frontend directory. Install dependencies:
 
 ```bash
-cd cd task-manager
+cd task-manager
 npm install
 ```
 
